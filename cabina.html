@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Cabina</title>
+  <link rel=stylesheet href=cabina.css>
+</head>
+
+<body>
+
+<main>
+
+<header>
+  <h1>Cabina virtual</h1>
+    <p><em>Bienvenido a su show, <strong>Irene Flores</strong>!</em></p>
+    <p>Hoy es día <date></date> del año <span id=año></span></p>
+  <figure>
+    <img alt="Radio Indígena Logo" src="logo.png" >
+  </figure>
+</header>
+
+<section id=events>
+
+  <div id=legalid>
+    <header>
+      <h1>Legal ID</h1>
+    </header>
+    <p>
+      <button id=kindlp class="legalid">KINDLP-FM</button>
+    </p>
+  </div><!-- #legalid -->
+  
+  <div id=anuncios>
+    <header>
+      <h1>Anuncios</h1>
+    </header>
+
+    <ol>
+      <li class=anuncio>
+         <h2>Evento </h2> 
+         <audio src=foo.ogg controls></audio>
+         <p>Esto es la descripción del evento. Aquí dicimos unas cosas interesantes.</p>
+      </li>
+      <li class=anuncio>
+         <h2>Evento </h2> 
+         <audio src=foo.ogg controls></audio>
+         <p>Esto es la descripción del evento. Aquí dicimos unas cosas interesantes.</p>
+      </li>
+      <li class=anuncio>
+         <h2>Evento </h2> 
+         <audio src=foo.ogg controls></audio>
+         <p>Esto es la descripción del evento. Aquí dicimos unas cosas interesantes.</p>
+      </li>
+      <li class=anuncio>
+         <h2>Evento </h2> 
+         <audio src=foo.ogg controls></audio>
+         <p>Esto es la descripción del evento. Aquí dicimos unas cosas interesantes.</p>
+      </li>
+      <li class=anuncio>
+         <h2>Evento </h2> 
+         <audio src=foo.ogg controls></audio>
+         <p>Esto es la descripción del evento. Aquí dicimos unas cosas interesantes.</p>
+      </li>
+      <li class=anuncio>
+         <h2>Evento </h2> 
+         <audio src=foo.ogg controls></audio>
+         <p>Esto es la descripción del evento. Aquí dicimos unas cosas interesantes.</p>
+      </li>
+      <li class=anuncio>
+         <h2>Evento </h2> 
+         <audio src=foo.ogg controls></audio>
+         <p>Esto es la descripción del evento. Aquí dicimos unas cosas interesantes.</p>
+      </li>
+      <li class=anuncio>
+         <h2>Evento </h2> 
+         <audio src=foo.ogg controls></audio>
+         <p>Esto es la descripción del evento. Aquí dicimos unas cosas interesantes.</p>
+      </li>
+      <li class=anuncio>
+         <h2>Evento </h2> 
+         <audio src=foo.ogg controls></audio>
+         <p>Esto es la descripción del evento. Aquí dicimos unas cosas interesantes.</p>
+      </li>
+    </ol>
+  </div><!-- #anuncios -->
+
+</section>
+
+</main>
+
+<script src=datemath.js></script>
+<script>
+var date = document.querySelector('date'),
+    año = document.querySelector('#año'),
+    now = new Date();
+
+date.innerHTML = now.dayOfYear();
+año.innerHTML = now.getFullYear();
+</script>
+
+  
+</body>
+</html>
